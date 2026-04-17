@@ -291,7 +291,9 @@ if not (PROJECT_ROOT / "data").exists():
 DATA_RAW = PROJECT_ROOT / "data" / "raw"
 DATA_PROCESSED = PROJECT_ROOT / "data" / "processed"
 CACHE_DIR = PROJECT_ROOT / ".cache"
+PLOTS_DIR = CACHE_DIR / "plots"
 (CACHE_DIR / "matplotlib").mkdir(parents=True, exist_ok=True)
+PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 os.environ.setdefault("MPLCONFIGDIR", str(CACHE_DIR / "matplotlib"))
 os.environ.setdefault("XDG_CACHE_HOME", str(CACHE_DIR))
 """
@@ -780,11 +782,12 @@ def build_module_2() -> None:
         code(
             COMMON_SETUP
             + """
+import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 import pandas as pd
-from cdlib import algorithms
-from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
+from cdlib import algorithms, evaluation, viz
+from IPython.display import Image, display
 """
         ),
         code(DEMO_GRAPH_CODE),
@@ -802,78 +805,84 @@ leiden = algorithms.leiden(G)
 infomap = algorithms.infomap(G)
 label_prop = algorithms.label_propagation(G)
 
+clusterings = [louvain, leiden, infomap, label_prop]
 pd.DataFrame(
-    [
-        {"algorithm": "Louvain", "communities": len(louvain.communities)},
-        {"algorithm": "Leiden", "communities": len(leiden.communities)},
-        {"algorithm": "Infomap", "communities": len(infomap.communities)},
-        {"algorithm": "Label propagation", "communities": len(label_prop.communities)},
-    ]
+    [{"algorithm": clustering.method_name, "communities": len(clustering.communities)} for clustering in clusterings]
 )
 """
         ),
         code(
             """
-def partition_frame(partition, column_name):
-    rows = []
-    for cluster_id, community in enumerate(partition.communities):
-        for node in community:
-            rows.append({"node_id": int(node), column_name: cluster_id})
-    frame = pd.DataFrame(rows)
-    node_attributes = pd.DataFrame(
-        [
-            {
-                "node_id": node,
-                "camp": G.nodes[node]["camp"],
-                "community_label": G.nodes[node]["community_label"],
-                "enclave": G.nodes[node]["enclave"],
-            }
-            for node in G.nodes()
-        ]
+comparison_rows = []
+reference = louvain
+for clustering in clusterings:
+    ari = evaluation.adjusted_rand_index(reference, clustering).score
+    nmi = evaluation.normalized_mutual_information(reference, clustering).score
+    comparison_rows.append(
+        {
+            "algorithm": clustering.method_name,
+            "ARI_vs_louvain": round(ari, 4),
+            "NMI_vs_louvain": round(nmi, 4),
+        }
     )
-    return node_attributes.merge(frame, on="node_id", how="left")
+
+pd.DataFrame(comparison_rows)
 """
         ),
         code(
             """
-louvain_frame = partition_frame(louvain, "cluster")
-leiden_frame = partition_frame(leiden, "cluster")
-infomap_frame = partition_frame(infomap, "cluster")
-label_prop_frame = partition_frame(label_prop, "cluster")
-
-pd.DataFrame(
-    [
-        {
-            "algorithm": "Louvain vs Louvain",
-            "ARI": 1.0,
-            "NMI": 1.0,
-        },
-        {
-            "algorithm": "Leiden vs Louvain",
-            "ARI": round(adjusted_rand_score(louvain_frame["cluster"], leiden_frame["cluster"]), 4),
-            "NMI": round(normalized_mutual_info_score(louvain_frame["cluster"], leiden_frame["cluster"]), 4),
-        },
-        {
-            "algorithm": "Infomap vs Louvain",
-            "ARI": round(adjusted_rand_score(louvain_frame["cluster"], infomap_frame["cluster"]), 4),
-            "NMI": round(normalized_mutual_info_score(louvain_frame["cluster"], infomap_frame["cluster"]), 4),
-        },
-        {
-            "algorithm": "Label propagation vs Louvain",
-            "ARI": round(adjusted_rand_score(louvain_frame["cluster"], label_prop_frame["cluster"]), 4),
-            "NMI": round(normalized_mutual_info_score(louvain_frame["cluster"], label_prop_frame["cluster"]), 4),
-        },
-    ]
-)
+cluster_grid = viz.plot_sim_matrix(clusterings, evaluation.adjusted_rand_index)
+matrix_path = PLOTS_DIR / "module2_similarity_matrix.png"
+cluster_grid.fig.savefig(matrix_path, bbox_inches="tight")
+display(Image(filename=str(matrix_path)))
+plt.close("all")
 """
         ),
-        md("## 2. Global scale: assortativity"),
+        md("## 2. Visualize the resulting partitions"),
+        code(
+            """
+position = nx.spring_layout(G, seed=7)
+viz.plot_network_clusters(G, louvain, position=position, figsize=(8, 8), plot_labels=False)
+cluster_plot_path = PLOTS_DIR / "module2_louvain_network.png"
+plt.savefig(cluster_plot_path, bbox_inches="tight")
+display(Image(filename=str(cluster_plot_path)))
+plt.close("all")
+"""
+        ),
+        md("## 3. Evaluate enclave-like structure with CDlib fitness scores"),
+        code(
+            """
+fitness_rows = []
+for clustering in clusterings:
+    fitness_rows.append(
+        {
+            "algorithm": clustering.method_name,
+            "modularity": round(evaluation.newman_girvan_modularity(G, clustering).score, 4),
+            "internal_edge_density": round(evaluation.internal_edge_density(G, clustering).score, 4),
+            "conductance": round(evaluation.conductance(G, clustering).score, 4),
+            "avg_distance": round(evaluation.avg_distance(G, clustering).score, 4),
+            "hub_dominance": round(evaluation.hub_dominance(G, clustering).score, 4),
+        }
+    )
+
+fitness_frame = pd.DataFrame(fitness_rows)
+fitness_frame
+"""
+        ),
+        code(
+            """
+ax = viz.plot_com_stat(clusterings, evaluation.conductance)
+conductance_path = PLOTS_DIR / "module2_conductance.png"
+ax.figure.savefig(conductance_path, bbox_inches="tight")
+display(Image(filename=str(conductance_path)))
+plt.close("all")
+"""
+        ),
+        md("## 4. Global and local structural interpretation"),
         code(
             """
 camp_assortativity = nx.attribute_assortativity_coefficient(G, "camp")
-enclave_assortativity = nx.attribute_assortativity_coefficient(
-    nx.relabel_nodes(G, {node: node for node in G.nodes()}), "enclave"
-)
+enclave_assortativity = nx.attribute_assortativity_coefficient(G, "enclave")
 
 pd.Series(
     {
@@ -883,35 +892,13 @@ pd.Series(
 )
 """
         ),
-        md("## 3. Meso scale: purity and separation"),
         code(
             """
-community_rows = []
-for cluster_id, chunk in louvain_frame.groupby("cluster"):
-    nodes = set(chunk["node_id"])
-    subgraph = G.subgraph(nodes)
-    internal_edges = subgraph.number_of_edges()
-    external_edges = nx.cut_size(G, nodes)
-    dominant_camp = chunk["camp"].mode().iat[0]
-    purity = (chunk["camp"] == dominant_camp).mean()
-    separation = internal_edges / max(internal_edges + external_edges, 1)
-    community_rows.append(
-        {
-            "cluster": cluster_id,
-            "size": len(nodes),
-            "purity": round(float(purity), 4),
-            "internal_edges": internal_edges,
-            "external_edges": int(external_edges),
-            "separation": round(float(separation), 4),
-        }
-    )
+node_to_louvain = {}
+for cluster_id, community in enumerate(louvain.communities):
+    for node in community:
+        node_to_louvain[int(node)] = cluster_id
 
-pd.DataFrame(community_rows).sort_values("cluster").reset_index(drop=True)
-"""
-        ),
-        md("## 4. Local scale: node conformity"),
-        code(
-            """
 conformity_rows = []
 for node in G.nodes():
     neighbors = list(G.neighbors(node))
@@ -925,6 +912,7 @@ for node in G.nodes():
             "node_id": node,
             "camp": G.nodes[node]["camp"],
             "community_label": G.nodes[node]["community_label"],
+            "louvain_cluster": node_to_louvain[node],
             "same_neighbor_share": same_neighbor_share,
         }
     )
@@ -958,6 +946,10 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 import seaborn as sns
+import ndlib.models.ModelConfig as mc
+from ndlib.models.opinions import AlgorithmicBiasModel, HKModel
+from ndlib.viz.mpl.OpinionEvolution import OpinionEvolution
+from IPython.display import Image, display
 
 sns.set_theme(context="talk", style="whitegrid")
 print("NDlib version:", getattr(ndlib, "__version__", "installed"))
@@ -972,15 +964,6 @@ G = load_graph(DATA_RAW / "workshop_network.graphml")
         ),
         code(
             """
-def initialize_opinions(graph):
-    return {node: float(graph.nodes[node]["opinion"]) for node in graph.nodes()}
-
-
-def record_history(step, opinions, sample_nodes, records):
-    for node in sample_nodes:
-        records.append({"step": step, "node_id": node, "opinion": opinions[node]})
-
-
 def count_clusters(opinions, tolerance=0.08):
     values = sorted(opinions.values())
     if not values:
@@ -994,6 +977,14 @@ def count_clusters(opinions, tolerance=0.08):
 
 def summarise_state(label, opinions):
     values = np.array(list(opinions.values()))
+    if len(values) == 0:
+        return {
+            "scenario": label,
+            "mean": np.nan,
+            "std": np.nan,
+            "clusters": 0,
+            "range": np.nan,
+        }
     return {
         "scenario": label,
         "mean": round(float(values.mean()), 4),
@@ -1005,106 +996,81 @@ def summarise_state(label, opinions):
         ),
         code(
             """
-def run_deffuant(graph, epsilon, mu=0.35, steps=2500, seed=42, sample_every=25):
-    rng = np.random.default_rng(seed)
-    edges = list(graph.edges())
-    opinions = initialize_opinions(graph)
-    sample_nodes = sorted(rng.choice(list(graph.nodes()), size=min(12, graph.number_of_nodes()), replace=False).tolist())
-    records = []
-    record_history(0, opinions, sample_nodes, records)
+def run_opinion_model(model_class, graph, iterations, seed=None, **parameters):
+    if model_class is AlgorithmicBiasModel:
+        model = model_class(graph, seed=seed)
+    else:
+        if seed is not None:
+            np.random.seed(seed)
+        model = model_class(graph)
 
-    for step in range(1, steps + 1):
-        source, target = edges[rng.integers(len(edges))]
-        if abs(opinions[source] - opinions[target]) <= epsilon:
-            delta = mu * (opinions[target] - opinions[source])
-            opinions[source] += delta
-            opinions[target] -= delta
-        if step % sample_every == 0:
-            record_history(step, opinions, sample_nodes, records)
+    configuration = mc.Configuration()
+    for parameter_name, parameter_value in parameters.items():
+        configuration.add_model_parameter(parameter_name, parameter_value)
 
-    return pd.DataFrame(records), opinions
-
-
-def run_biased_exposure(graph, epsilon, bias_strength=6.0, mu=0.35, steps=2500, seed=42, sample_every=25):
-    rng = np.random.default_rng(seed)
-    opinions = initialize_opinions(graph)
-    sample_nodes = sorted(rng.choice(list(graph.nodes()), size=min(12, graph.number_of_nodes()), replace=False).tolist())
-    records = []
-    record_history(0, opinions, sample_nodes, records)
-
-    nodes = list(graph.nodes())
-    for step in range(1, steps + 1):
-        source = int(nodes[rng.integers(len(nodes))])
-        neighbors = list(graph.neighbors(source))
-        if neighbors:
-            distances = np.array([abs(opinions[source] - opinions[target]) for target in neighbors])
-            weights = np.exp(-bias_strength * distances)
-            weights = weights / weights.sum()
-            target = int(rng.choice(neighbors, p=weights))
-            if abs(opinions[source] - opinions[target]) <= epsilon:
-                delta = mu * (opinions[target] - opinions[source])
-                opinions[source] += delta
-                opinions[target] -= delta
-        if step % sample_every == 0:
-            record_history(step, opinions, sample_nodes, records)
-
-    return pd.DataFrame(records), opinions
+    model.set_initial_status(configuration)
+    trends = model.iteration_bunch(iterations)
+    final_status = getattr(model, "status", {})
+    final_opinions = {node: float(value) for node, value in final_status.items()}
+    return model, trends, final_opinions
 """
         ),
         md("## 1. Phase transition under different confidence thresholds"),
         code(
             """
 epsilons = [0.45, 0.25, 0.10]
-dw_summaries = []
-dw_histories = []
+hk_runs = {}
+hk_summaries = []
 
 for epsilon in epsilons:
-    history, final_state = run_deffuant(G, epsilon=epsilon, seed=42 + int(epsilon * 100))
-    dw_histories.append(history.assign(model=f"DW epsilon={epsilon}"))
-    dw_summaries.append(summarise_state(f"DW epsilon={epsilon}", final_state))
+    model, trends, final_state = run_opinion_model(HKModel, G, iterations=80, epsilon=epsilon, seed=42 + int(epsilon * 100))
+    hk_runs[epsilon] = (model, trends, final_state)
+    hk_summaries.append(summarise_state(f"HK epsilon={epsilon}", final_state))
 
-pd.DataFrame(dw_summaries)
+pd.DataFrame(hk_summaries)
 """
         ),
         code(
             """
-dw_history = pd.concat(dw_histories, ignore_index=True)
-fig, ax = plt.subplots(figsize=(12, 6))
-sns.lineplot(data=dw_history, x="step", y="opinion", hue="model", units="node_id", estimator=None, alpha=0.35, ax=ax)
-ax.set_title("Opinion trajectories under different confidence thresholds")
-plt.tight_layout()
+for epsilon in epsilons:
+    model, trends, _ = hk_runs[epsilon]
+    print(f"Opinion evolution for HK epsilon={epsilon}")
+    output_path = PLOTS_DIR / f"module3_hk_epsilon_{str(epsilon).replace('.', '_')}.png"
+    OpinionEvolution(model, trends).plot(filename=str(output_path))
+    display(Image(filename=str(output_path)))
 """
         ),
         md("## 2. Add algorithmic bias to the interaction rule"),
+        md(
+            """
+            `AlgorithmicBiasModel` in the installed NDlib version is stable on complete interaction graphs, so the biased/unbiased comparison below uses a complete exposure space with the same number of agents. This still matches the conceptual point of the module: selective exposure changes *who* interacts, not just *what* the current network topology looks like.
+            """
+        ),
         code(
             """
-unbiased_history, unbiased_state = run_deffuant(G, epsilon=0.25, seed=123)
-biased_history, biased_state = run_biased_exposure(G, epsilon=0.25, bias_strength=7.5, seed=123)
+complete_graph = nx.complete_graph(G.number_of_nodes())
+hk_model, hk_trends, hk_state = run_opinion_model(HKModel, complete_graph, iterations=80, epsilon=0.25, seed=123)
+ab_model, ab_trends, ab_state = run_opinion_model(AlgorithmicBiasModel, complete_graph, iterations=80, epsilon=0.25, gamma=7.5, seed=123)
 
 pd.DataFrame(
     [
-        summarise_state("Unbiased DW (epsilon=0.25)", unbiased_state),
-        summarise_state("Biased neighbor selection", biased_state),
+        summarise_state("HKModel on complete graph", hk_state),
+        summarise_state("AlgorithmicBiasModel gamma=7.5", ab_state),
     ]
 )
 """
         ),
         code(
             """
-trajectory_frame = pd.concat(
-    [
-        unbiased_history.assign(model="Unbiased"),
-        biased_history.assign(model="Biased"),
-    ],
-    ignore_index=True,
-)
+print("Opinion evolution for HKModel")
+hk_plot_path = PLOTS_DIR / "module3_hk_model.png"
+OpinionEvolution(hk_model, hk_trends).plot(filename=str(hk_plot_path))
+display(Image(filename=str(hk_plot_path)))
 
-fig, axes = plt.subplots(1, 2, figsize=(16, 6), sharey=True)
-for axis, model_name in zip(axes, ["Unbiased", "Biased"]):
-    chunk = trajectory_frame[trajectory_frame["model"] == model_name]
-    sns.lineplot(data=chunk, x="step", y="opinion", units="node_id", estimator=None, alpha=0.4, ax=axis)
-    axis.set_title(model_name)
-plt.tight_layout()
+print("Opinion evolution for AlgorithmicBiasModel")
+ab_plot_path = PLOTS_DIR / "module3_algorithmic_bias_model.png"
+OpinionEvolution(ab_model, ab_trends).plot(filename=str(ab_plot_path))
+display(Image(filename=str(ab_plot_path)))
 """
         ),
     ]
@@ -1131,7 +1097,9 @@ import sqlite3
 import networkx as nx
 import numpy as np
 import pandas as pd
-from cdlib import algorithms
+import matplotlib.pyplot as plt
+from cdlib import algorithms, evaluation, viz
+from IPython.display import Image, display
 from ysights import YDataHandler
 """
         ),
@@ -1202,7 +1170,15 @@ pd.Series(
         md("## 3. Detect enclave-like clusters inside the simulation output"),
         code(
             """
-follow_partition = algorithms.louvain(social_graph.to_undirected())
+social_graph_u = social_graph.to_undirected()
+mention_graph_u = mention_graph.to_undirected()
+
+follow_partition = algorithms.louvain(social_graph_u)
+follow_leiden = algorithms.leiden(social_graph_u)
+mention_partition = algorithms.louvain(mention_graph_u)
+follow_partition.method_name = "follow_louvain"
+follow_leiden.method_name = "follow_leiden"
+mention_partition.method_name = "mention_louvain"
 
 cluster_rows = []
 for cluster_id, community in enumerate(follow_partition.communities):
@@ -1220,26 +1196,55 @@ cluster_frame.head()
         ),
         code(
             """
-community_rows = []
-for cluster_id, chunk in cluster_frame.groupby("cluster"):
-    nodes = set(chunk["node_id"])
-    subgraph = social_graph.to_undirected().subgraph(nodes)
-    internal_edges = subgraph.number_of_edges()
-    external_edges = nx.cut_size(social_graph.to_undirected(), nodes)
-    dominant_leaning = chunk["leaning"].mode().iat[0]
-    purity = (chunk["leaning"] == dominant_leaning).mean()
-    community_rows.append(
+partition_rows = []
+for graph_name, graph_obj, partition in [
+    ("follow-louvain", social_graph_u, follow_partition),
+    ("follow-leiden", social_graph_u, follow_leiden),
+    ("mention-louvain", mention_graph_u, mention_partition),
+]:
+    partition_rows.append(
         {
-            "cluster": cluster_id,
-            "size": len(nodes),
-            "purity": round(float(purity), 4),
-            "internal_edges": internal_edges,
-            "external_edges": int(external_edges),
-            "separation": round(internal_edges / max(internal_edges + external_edges, 1), 4),
+            "partition": graph_name,
+            "communities": len(partition.communities),
+            "modularity": round(evaluation.newman_girvan_modularity(graph_obj, partition).score, 4),
+            "internal_edge_density": round(evaluation.internal_edge_density(graph_obj, partition).score, 4),
+            "conductance": round(evaluation.conductance(graph_obj, partition).score, 4),
+            "hub_dominance": round(evaluation.hub_dominance(graph_obj, partition).score, 4),
         }
     )
 
-pd.DataFrame(community_rows).sort_values("cluster").reset_index(drop=True)
+pd.DataFrame(partition_rows)
+"""
+        ),
+        code(
+            """
+cluster_grid = viz.plot_sim_matrix(
+    [follow_partition, follow_leiden, mention_partition],
+    evaluation.normalized_mutual_information,
+)
+ysocial_similarity_path = PLOTS_DIR / "module4_partition_similarity.png"
+cluster_grid.fig.savefig(ysocial_similarity_path, bbox_inches="tight")
+display(Image(filename=str(ysocial_similarity_path)))
+plt.close("all")
+"""
+        ),
+        code(
+            """
+position = nx.spring_layout(social_graph_u, seed=7)
+viz.plot_network_clusters(social_graph_u, follow_partition, position=position, figsize=(8, 8), plot_labels=False)
+ysocial_cluster_path = PLOTS_DIR / "module4_follow_clusters.png"
+plt.savefig(ysocial_cluster_path, bbox_inches="tight")
+display(Image(filename=str(ysocial_cluster_path)))
+plt.close("all")
+"""
+        ),
+        code(
+            """
+ax = viz.plot_com_stat([follow_partition, follow_leiden, mention_partition], evaluation.conductance)
+ysocial_conductance_path = PLOTS_DIR / "module4_conductance.png"
+ax.figure.savefig(ysocial_conductance_path, bbox_inches="tight")
+display(Image(filename=str(ysocial_conductance_path)))
+plt.close("all")
 """
         ),
         code(
@@ -1347,7 +1352,7 @@ import networkx as nx
 import numpy as np
 import pandas as pd
 from cdlib import algorithms
-from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
+from cdlib import evaluation
 """
                 ),
                 code(DEMO_GRAPH_CODE),
@@ -1373,8 +1378,8 @@ infomap_labels = partition_labels(infomap)
 
 pd.Series(
     {
-        "ARI": round(adjusted_rand_score(louvain_labels, infomap_labels), 4),
-        "NMI": round(normalized_mutual_info_score(louvain_labels, infomap_labels), 4),
+        "ARI": round(evaluation.adjusted_rand_index(louvain, infomap).score, 4),
+        "NMI": round(evaluation.normalized_mutual_information(louvain, infomap).score, 4),
     }
 )
 """
@@ -1389,8 +1394,10 @@ pd.Series(
                     COMMON_SETUP
                     + """
 import networkx as nx
+import ndlib.models.ModelConfig as mc
 import numpy as np
 import pandas as pd
+from ndlib.models.opinions import AlgorithmicBiasModel
 """
                 ),
                 code(DEMO_GRAPH_CODE),
@@ -1398,9 +1405,6 @@ import pandas as pd
                     """
 write_demo_graph_files()
 G = load_graph(DATA_RAW / "workshop_network.graphml")
-
-def initialize_opinions(graph):
-    return {node: float(graph.nodes[node]["opinion"]) for node in graph.nodes()}
 
 def count_clusters(opinions, tolerance=0.08):
     values = sorted(opinions.values())
@@ -1410,30 +1414,22 @@ def count_clusters(opinions, tolerance=0.08):
             clusters += 1
     return clusters
 
-def run_biased_exposure(graph, epsilon, bias_strength=6.0, mu=0.35, steps=2500, seed=42):
-    rng = np.random.default_rng(seed)
-    opinions = initialize_opinions(graph)
-    nodes = list(graph.nodes())
-    for _ in range(steps):
-        source = int(nodes[rng.integers(len(nodes))])
-        neighbors = list(graph.neighbors(source))
-        if neighbors:
-            distances = np.array([abs(opinions[source] - opinions[target]) for target in neighbors])
-            weights = np.exp(-bias_strength * distances)
-            weights = weights / weights.sum()
-            target = int(rng.choice(neighbors, p=weights))
-            if abs(opinions[source] - opinions[target]) <= epsilon:
-                delta = mu * (opinions[target] - opinions[source])
-                opinions[source] += delta
-                opinions[target] -= delta
-    return opinions
+def run_algorithmic_bias(graph, epsilon, gamma, iterations=80, seed=42):
+    model = AlgorithmicBiasModel(graph, seed=seed)
+    configuration = mc.Configuration()
+    configuration.add_model_parameter("epsilon", epsilon)
+    configuration.add_model_parameter("gamma", gamma)
+    model.set_initial_status(configuration)
+    trends = model.iteration_bunch(iterations)
+    return {node: float(value) for node, value in trends[-1]["status"].items()}
 """
                 ),
                 code(
                     """
 epsilon = 0.2
 bias_strength = 8.0
-biased_state = run_biased_exposure(G, epsilon=epsilon, bias_strength=bias_strength, seed=101)
+complete_graph = nx.complete_graph(G.number_of_nodes())
+biased_state = run_algorithmic_bias(complete_graph, epsilon=epsilon, gamma=bias_strength, seed=101)
 
 pd.Series(
     {
