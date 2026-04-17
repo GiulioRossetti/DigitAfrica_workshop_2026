@@ -1,55 +1,87 @@
 # DigitAfrica Workshop 2026
 ## Identifying Epistemic Enclaves and Understanding Polarisation
 
-A one-day hands-on course covering the computational methods used to detect and analyse epistemic enclaves and online polarisation in social networks.
+This repository contains the hands-on material for the six-hour workshop described in the schedule PDF. The notebook structure now mirrors the actual workshop flow: two morning modules on segregation and enclave detection, two afternoon modules on polarisation dynamics and YSocial simulation analysis, plus one exercise notebook per module.
 
----
+## Core learning outcome
+
+By the end of the day, participants should be able to load social network data, identify enclave-like structures mathematically, and study how algorithmic bias can push those structures toward polarisation.
 
 ## Repository structure
 
-```
+```text
 .
 ├── data/
-│   ├── raw/          # Original, unmodified datasets
-│   └── processed/    # Cleaned / pre-processed datasets
-├── notebooks/        # Jupyter notebooks (one per session)
-├── slides/           # Presentation slides (PDF / PPTX)
-└── requirements.txt  # Python dependencies
+│   ├── raw/                 # Demo graph files and YSocial-style SQLite database
+│   └── processed/           # Derived tabular outputs used by the notebooks
+├── notebooks/
+│   ├── 00_environment_check.ipynb
+│   ├── modules/            # Four workshop modules, aligned with the PDF schedule
+│   ├── exercises/          # One lightweight exercise notebook per module
+├── scripts/
+│   └── build_workshop_materials.py
+├── slides/
+└── requirements.txt
 ```
 
-## Course outline
+## Workshop structure
 
-| Time | Session | Notebook |
+### Morning session: The Anatomy of Segregation
+
+| Time | Section | Notebook |
 |------|---------|----------|
-| 09:00 – 09:30 | Welcome & setup | `00_setup.ipynb` |
-| 09:30 – 10:30 | Introduction to polarisation | `01_introduction.ipynb` |
-| 10:30 – 12:00 | Data exploration | `02_data_exploration.ipynb` |
-| 13:00 – 14:00 | Network construction & analysis | `03_network_analysis.ipynb` |
-| 14:00 – 15:00 | Community detection | `04_community_detection.ipynb` |
-| 15:00 – 16:00 | Measuring polarisation | `05_polarisation.ipynb` |
-| 16:00 – 17:30 | Epistemic enclaves | `06_epistemic_enclaves.ipynb` |
+| 09:30-11:00 | Module 1. Foundations: Mapping the Terrain | `notebooks/modules/01_foundations_mapping_the_terrain.ipynb` |
+| 11:00-11:15 | Coffee break | - |
+| 11:15-12:45 | Module 2. Detecting Epistemic Enclaves | `notebooks/modules/02_detecting_epistemic_enclaves.ipynb` |
+
+### Afternoon session: The Mechanics of Division
+
+| Time | Section | Notebook |
+|------|---------|----------|
+| 12:45-13:45 | Lunch break | - |
+| 13:45-15:15 | Module 3. Simulating Polarisation Dynamics | `notebooks/modules/03_simulating_polarisation_dynamics.ipynb` |
+| 15:15-15:30 | Coffee break | - |
+| 15:30-17:00 | Module 4. The Controlled Sandbox (YSocial + `ysights`) | `notebooks/modules/04_ysocial_sandbox.ipynb` |
+
+### Exercises
+
+Each section also has a short companion exercise notebook in `notebooks/exercises/`:
+
+- `01_foundations_exercises.ipynb`
+- `02_enclaves_exercises.ipynb`
+- `03_dynamics_exercises.ipynb`
+- `04_ysocial_sandbox_exercises.ipynb`
 
 ## Getting started
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/GiulioRossetti/DigitAfrica_workshop_2026.git
 cd DigitAfrica_workshop_2026
 
-# 2. Create and activate a virtual environment (optional but recommended)
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-
-# 3. Install dependencies
+source .venv/bin/activate
 pip install -r requirements.txt
 
-# 4. Launch JupyterLab
+python scripts/build_workshop_materials.py
 jupyter lab
 ```
 
-Then open the notebooks in the `notebooks/` folder in order, starting with `00_setup.ipynb`.
+Open the notebooks in this order:
+
+1. `notebooks/00_environment_check.ipynb`
+2. `notebooks/modules/01_foundations_mapping_the_terrain.ipynb`
+3. `notebooks/modules/02_detecting_epistemic_enclaves.ipynb`
+4. `notebooks/modules/03_simulating_polarisation_dynamics.ipynb`
+5. `notebooks/modules/04_ysocial_sandbox.ipynb`
+
+## Notes on the YSocial section
+
+- Module 4 assumes access to a YSocial simulation database.
+- The repository ships `data/raw/ysocial_demo.sqlite` so the `ysights` workflow can be executed and tested immediately.
+- When you have a real simulation export, change the `DB_PATH` variable in the notebook and rerun the analysis.
 
 ## Requirements
 
-- Python ≥ 3.10
-- See `requirements.txt` for the full list of packages.
+- Python 3.10+
+- `networkx`, `cdlib`, `ndlib`, `numpy`, `pandas`, `matplotlib`, `seaborn`, `scikit-learn`, `jupyterlab`
+- `ysights` for the YSocial analysis notebook

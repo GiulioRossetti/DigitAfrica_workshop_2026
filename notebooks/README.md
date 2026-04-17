@@ -1,23 +1,32 @@
 # Notebooks
 
-This directory contains the Jupyter notebooks for the workshop hands-on sessions.
+The notebook tree is organized around the four sections in the workshop schedule, plus a short environment check and one exercise notebook per section.
 
-| Notebook | Session | Topic |
-|----------|---------|-------|
-| `00_setup.ipynb` | Pre-course | Environment verification |
-| `01_introduction.ipynb` | Morning 1 | Introduction to online polarisation & epistemic enclaves |
-| `02_data_exploration.ipynb` | Morning 2 | Data loading, descriptive statistics, and visualisation |
-| `03_network_analysis.ipynb` | Afternoon 1 | Network construction and basic analysis |
-| `04_community_detection.ipynb` | Afternoon 2 | Community detection algorithms |
-| `05_polarisation.ipynb` | Afternoon 3 | Measuring structural and opinion polarisation |
-| `06_epistemic_enclaves.ipynb` | Afternoon 4 | Identifying and characterising epistemic enclaves |
+## Recommended order
+
+| Notebook | Role |
+|----------|------|
+| `00_environment_check.ipynb` | Verifies dependencies and generates the demo assets |
+| `modules/01_foundations_mapping_the_terrain.ipynb` | Module 1. Network loading, metrics, core extraction, visual exploration |
+| `modules/02_detecting_epistemic_enclaves.ipynb` | Module 2. Community detection and enclave evaluation |
+| `modules/03_simulating_polarisation_dynamics.ipynb` | Module 3. Bounded confidence and algorithmic bias |
+| `modules/04_ysocial_sandbox.ipynb` | Module 4. YSocial simulation analysis with `ysights` |
+
+## Exercises
+
+The `exercises/` directory contains four lightweight practice notebooks:
+
+- `exercises/01_foundations_exercises.ipynb`
+- `exercises/02_enclaves_exercises.ipynb`
+- `exercises/03_dynamics_exercises.ipynb`
+- `exercises/04_ysocial_sandbox_exercises.ipynb`
 
 ## Running the notebooks
 
 ```bash
-# Install dependencies
 pip install -r ../requirements.txt
-
-# Launch Jupyter
+python ../scripts/build_workshop_materials.py
 jupyter lab
 ```
+
+The notebooks are designed to run against the demo graph files and the included `ysocial_demo.sqlite` database, but Module 4 can be pointed to a real YSocial export by editing the `DB_PATH` variable.

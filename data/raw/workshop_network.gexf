@@ -1,0 +1,1515 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-17">
+    <creator>NetworkX 3.2.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="block" type="long" />
+      <attribute id="1" title="community_label" type="string" />
+      <attribute id="2" title="camp" type="string" />
+      <attribute id="3" title="opinion" type="double" />
+      <attribute id="4" title="enclave" type="long" />
+      <attribute id="5" title="activity" type="long" />
+    </attributes>
+    <nodes>
+      <node id="0" label="user_000">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5225754628221012" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="1" label="user_001">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6267739534816222" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="2" label="user_002">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.4709394728823455" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="3" label="user_003">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5128540649563611" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="4" label="user_004">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6256140829266276" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="5" label="user_005">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.47157140998466296" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="6" label="user_006">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5239792541179015" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="7" label="user_007">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.627924800412392" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="8" label="user_008">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5916116613398111" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="9" label="user_009">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5052555330351612" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="10" label="user_010">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5843564104598497" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="11" label="user_011">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5588636936058482" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="12" label="user_012">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6397522144841334" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="13" label="user_013">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5805129768310506" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="14" label="user_014">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5435083443057518" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="15" label="user_015">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.42767311822836074" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="16" label="user_016">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6333918347264973" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="17" label="user_017">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5217837537294825" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="18" label="user_018">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6231646985779293" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="19" label="user_019">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.643208837754323" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="20" label="user_020">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5949366038685238" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="21" label="user_021">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6239248011301948" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="22" label="user_022">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5909485132306702" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="23" label="user_023">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.4117819607203608" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="24" label="user_024">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.584486858902239" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="25" label="user_025">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5196182906080961" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="26" label="user_026">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6258907243263584" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="27" label="user_027">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5060337231295663" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="28" label="user_028">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5281752887855901" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="29" label="user_029">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6267919015502939" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="30" label="user_030">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6156175453969248" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="31" label="user_031">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5584836298827301" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="32" label="user_032">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6554409965942808" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="33" label="user_033">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5838540464107089" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="34" label="user_034">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.573974874100806" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="35" label="user_035">
+        <attvalues>
+          <attvalue for="0" value="0" />
+          <attvalue for="1" value="left-mainstream" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.5183419232440717" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="36" label="user_036">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6916148521962464" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="37" label="user_037">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.836787093694755" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="15" />
+        </attvalues>
+      </node>
+      <node id="38" label="user_038">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.853360540928161" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="39" label="user_039">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.9747608659633554" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="15" />
+        </attvalues>
+      </node>
+      <node id="40" label="user_040">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.8971585951754644" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="41" label="user_041">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.9894904134443014" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="42" label="user_042">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-1.0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="43" label="user_043">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.8937270279207123" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="14" />
+        </attvalues>
+      </node>
+      <node id="44" label="user_044">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.6705112209688524" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="45" label="user_045">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-1.0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="46" label="user_046">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.8115880223161731" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="47" label="user_047">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.9039254912723841" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="48" label="user_048">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-1.0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="49" label="user_049">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.8888276023783114" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="50" label="user_050">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.9736489545241781" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="51" label="user_051">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.9762777170160721" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="52" label="user_052">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.8486101695358335" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="53" label="user_053">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="left-enclave" />
+          <attvalue for="2" value="left" />
+          <attvalue for="3" value="-0.8517482609688202" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="54" label="user_054">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.6495394032916568" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="55" label="user_055">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5700771768362748" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="56" label="user_056">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.6099026712682086" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="57" label="user_057">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.6341992412918634" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="58" label="user_058">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.4852467790043689" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="59" label="user_059">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5589529725714165" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="2" />
+        </attvalues>
+      </node>
+      <node id="60" label="user_060">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5810180703612448" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="61" label="user_061">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.6763439252859902" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="62" label="user_062">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.4652990113667538" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="63" label="user_063">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.6533031394660207" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="64" label="user_064">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5356733615757946" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="65" label="user_065">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5766776200727795" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="66" label="user_066">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5436387656513136" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="67" label="user_067">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.49123754698017597" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="68" label="user_068">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5735832230866943" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="14" />
+        </attvalues>
+      </node>
+      <node id="69" label="user_069">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.4746282936323327" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="70" label="user_070">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5118754054185246" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="71" label="user_071">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5903289427542584" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="72" label="user_072">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5711748500429438" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="73" label="user_073">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5103412820587232" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="2" />
+        </attvalues>
+      </node>
+      <node id="74" label="user_074">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.49423006592842483" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="75" label="user_075">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.33284977021634593" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="76" label="user_076">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.602160502822883" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="77" label="user_077">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.3942395555043504" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="78" label="user_078">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.6028533250122513" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="79" label="user_079">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.520858746614206" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="80" label="user_080">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5745132779746817" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="81" label="user_081">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5878169738852445" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="82" label="user_082">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.508704355616563" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="83" label="user_083">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.47958252994346995" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="84" label="user_084">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5279445413928369" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="85" label="user_085">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.4680482604470697" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="86" label="user_086">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.6131497283280611" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="2" />
+        </attvalues>
+      </node>
+      <node id="87" label="user_087">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.5310378987073159" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="88" label="user_088">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.41530251790870065" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="89" label="user_089">
+        <attvalues>
+          <attvalue for="0" value="2" />
+          <attvalue for="1" value="right-mainstream" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.4492417712256527" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="96" label="user_096">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="1.0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="97" label="user_097">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9152138193939912" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="98" label="user_098">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9141352030928647" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="99" label="user_099">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9080307550873096" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="100" label="user_100">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.712433936208174" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="101" label="user_101">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="1.0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="102" label="user_102">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9672098083248272" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="103" label="user_103">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.939991540174858" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="104" label="user_104">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.8273613278560299" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="105" label="user_105">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.8601129413992281" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="106" label="user_106">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.7266406423650662" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="107" label="user_107">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9150722534788002" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="90" label="user_090">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9050329353809164" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="91" label="user_091">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.7342115205047407" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="92" label="user_092">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9264667814891306" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="15" />
+        </attvalues>
+      </node>
+      <node id="93" label="user_093">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.9373215655034989" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="94" label="user_094">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.7648143138123982" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="95" label="user_095">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="right-enclave" />
+          <attvalue for="2" value="right" />
+          <attvalue for="3" value="0.7627613094848982" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="2" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="0" target="2" id="0" />
+      <edge source="0" target="8" id="1" />
+      <edge source="0" target="10" id="2" />
+      <edge source="0" target="13" id="3" />
+      <edge source="0" target="20" id="4" />
+      <edge source="0" target="24" id="5" />
+      <edge source="0" target="27" id="6" />
+      <edge source="0" target="28" id="7" />
+      <edge source="0" target="43" id="8" />
+      <edge source="1" target="8" id="9" />
+      <edge source="1" target="11" id="10" />
+      <edge source="1" target="13" id="11" />
+      <edge source="1" target="23" id="12" />
+      <edge source="1" target="25" id="13" />
+      <edge source="1" target="34" id="14" />
+      <edge source="1" target="41" id="15" />
+      <edge source="2" target="22" id="16" />
+      <edge source="2" target="23" id="17" />
+      <edge source="2" target="24" id="18" />
+      <edge source="2" target="28" id="19" />
+      <edge source="2" target="34" id="20" />
+      <edge source="2" target="51" id="21" />
+      <edge source="2" target="68" id="22" />
+      <edge source="3" target="8" id="23" />
+      <edge source="3" target="15" id="24" />
+      <edge source="3" target="21" id="25" />
+      <edge source="3" target="26" id="26" />
+      <edge source="3" target="28" id="27" />
+      <edge source="3" target="33" id="28" />
+      <edge source="3" target="53" id="29" />
+      <edge source="4" target="5" id="30" />
+      <edge source="4" target="7" id="31" />
+      <edge source="4" target="10" id="32" />
+      <edge source="4" target="25" id="33" />
+      <edge source="4" target="31" id="34" />
+      <edge source="4" target="53" id="35" />
+      <edge source="5" target="6" id="36" />
+      <edge source="5" target="10" id="37" />
+      <edge source="5" target="17" id="38" />
+      <edge source="5" target="24" id="39" />
+      <edge source="5" target="89" id="40" />
+      <edge source="6" target="9" id="41" />
+      <edge source="6" target="15" id="42" />
+      <edge source="6" target="19" id="43" />
+      <edge source="6" target="30" id="44" />
+      <edge source="6" target="38" id="45" />
+      <edge source="7" target="8" id="46" />
+      <edge source="7" target="12" id="47" />
+      <edge source="7" target="14" id="48" />
+      <edge source="7" target="19" id="49" />
+      <edge source="8" target="9" id="50" />
+      <edge source="8" target="13" id="51" />
+      <edge source="8" target="20" id="52" />
+      <edge source="8" target="26" id="53" />
+      <edge source="8" target="31" id="54" />
+      <edge source="8" target="32" id="55" />
+      <edge source="8" target="33" id="56" />
+      <edge source="9" target="18" id="57" />
+      <edge source="9" target="21" id="58" />
+      <edge source="9" target="28" id="59" />
+      <edge source="9" target="29" id="60" />
+      <edge source="9" target="35" id="61" />
+      <edge source="9" target="36" id="62" />
+      <edge source="9" target="44" id="63" />
+      <edge source="10" target="11" id="64" />
+      <edge source="10" target="19" id="65" />
+      <edge source="10" target="24" id="66" />
+      <edge source="10" target="30" id="67" />
+      <edge source="10" target="42" id="68" />
+      <edge source="10" target="43" id="69" />
+      <edge source="10" target="51" id="70" />
+      <edge source="11" target="15" id="71" />
+      <edge source="11" target="24" id="72" />
+      <edge source="11" target="35" id="73" />
+      <edge source="11" target="38" id="74" />
+      <edge source="12" target="14" id="75" />
+      <edge source="12" target="17" id="76" />
+      <edge source="12" target="27" id="77" />
+      <edge source="12" target="34" id="78" />
+      <edge source="12" target="45" id="79" />
+      <edge source="12" target="47" id="80" />
+      <edge source="13" target="23" id="81" />
+      <edge source="13" target="31" id="82" />
+      <edge source="13" target="38" id="83" />
+      <edge source="13" target="40" id="84" />
+      <edge source="13" target="47" id="85" />
+      <edge source="14" target="21" id="86" />
+      <edge source="14" target="22" id="87" />
+      <edge source="14" target="31" id="88" />
+      <edge source="14" target="35" id="89" />
+      <edge source="14" target="39" id="90" />
+      <edge source="14" target="49" id="91" />
+      <edge source="14" target="59" id="92" />
+      <edge source="15" target="23" id="93" />
+      <edge source="15" target="26" id="94" />
+      <edge source="15" target="28" id="95" />
+      <edge source="15" target="31" id="96" />
+      <edge source="15" target="52" id="97" />
+      <edge source="15" target="63" id="98" />
+      <edge source="15" target="89" id="99" />
+      <edge source="17" target="19" id="100" />
+      <edge source="17" target="24" id="101" />
+      <edge source="17" target="28" id="102" />
+      <edge source="17" target="52" id="103" />
+      <edge source="17" target="53" id="104" />
+      <edge source="17" target="79" id="105" />
+      <edge source="17" target="100" id="106" />
+      <edge source="18" target="23" id="107" />
+      <edge source="18" target="35" id="108" />
+      <edge source="18" target="44" id="109" />
+      <edge source="18" target="47" id="110" />
+      <edge source="19" target="23" id="111" />
+      <edge source="19" target="25" id="112" />
+      <edge source="19" target="27" id="113" />
+      <edge source="19" target="30" id="114" />
+      <edge source="19" target="32" id="115" />
+      <edge source="19" target="34" id="116" />
+      <edge source="19" target="40" id="117" />
+      <edge source="19" target="80" id="118" />
+      <edge source="20" target="28" id="119" />
+      <edge source="20" target="29" id="120" />
+      <edge source="20" target="62" id="121" />
+      <edge source="20" target="80" id="122" />
+      <edge source="21" target="25" id="123" />
+      <edge source="21" target="26" id="124" />
+      <edge source="21" target="27" id="125" />
+      <edge source="21" target="33" id="126" />
+      <edge source="21" target="36" id="127" />
+      <edge source="21" target="42" id="128" />
+      <edge source="21" target="84" id="129" />
+      <edge source="22" target="23" id="130" />
+      <edge source="22" target="26" id="131" />
+      <edge source="22" target="27" id="132" />
+      <edge source="22" target="33" id="133" />
+      <edge source="22" target="67" id="134" />
+      <edge source="22" target="71" id="135" />
+      <edge source="22" target="83" id="136" />
+      <edge source="23" target="24" id="137" />
+      <edge source="23" target="28" id="138" />
+      <edge source="23" target="42" id="139" />
+      <edge source="23" target="71" id="140" />
+      <edge source="24" target="27" id="141" />
+      <edge source="24" target="47" id="142" />
+      <edge source="24" target="56" id="143" />
+      <edge source="24" target="60" id="144" />
+      <edge source="25" target="34" id="145" />
+      <edge source="25" target="36" id="146" />
+      <edge source="25" target="51" id="147" />
+      <edge source="25" target="52" id="148" />
+      <edge source="25" target="67" id="149" />
+      <edge source="26" target="31" id="150" />
+      <edge source="26" target="62" id="151" />
+      <edge source="26" target="84" id="152" />
+      <edge source="26" target="89" id="153" />
+      <edge source="27" target="32" id="154" />
+      <edge source="27" target="34" id="155" />
+      <edge source="27" target="42" id="156" />
+      <edge source="27" target="46" id="157" />
+      <edge source="27" target="53" id="158" />
+      <edge source="27" target="63" id="159" />
+      <edge source="28" target="35" id="160" />
+      <edge source="28" target="38" id="161" />
+      <edge source="29" target="38" id="162" />
+      <edge source="29" target="46" id="163" />
+      <edge source="30" target="38" id="164" />
+      <edge source="30" target="48" id="165" />
+      <edge source="30" target="50" id="166" />
+      <edge source="30" target="51" id="167" />
+      <edge source="30" target="86" id="168" />
+      <edge source="31" target="33" id="169" />
+      <edge source="31" target="35" id="170" />
+      <edge source="31" target="48" id="171" />
+      <edge source="32" target="36" id="172" />
+      <edge source="32" target="42" id="173" />
+      <edge source="32" target="46" id="174" />
+      <edge source="32" target="47" id="175" />
+      <edge source="33" target="48" id="176" />
+      <edge source="33" target="67" id="177" />
+      <edge source="34" target="49" id="178" />
+      <edge source="35" target="36" id="179" />
+      <edge source="35" target="54" id="180" />
+      <edge source="35" target="69" id="181" />
+      <edge source="36" target="42" id="182" />
+      <edge source="36" target="43" id="183" />
+      <edge source="36" target="47" id="184" />
+      <edge source="37" target="39" id="185" />
+      <edge source="37" target="44" id="186" />
+      <edge source="37" target="48" id="187" />
+      <edge source="39" target="40" id="188" />
+      <edge source="39" target="45" id="189" />
+      <edge source="39" target="50" id="190" />
+      <edge source="39" target="53" id="191" />
+      <edge source="40" target="41" id="192" />
+      <edge source="40" target="44" id="193" />
+      <edge source="40" target="48" id="194" />
+      <edge source="41" target="44" id="195" />
+      <edge source="42" target="51" id="196" />
+      <edge source="43" target="48" id="197" />
+      <edge source="43" target="51" id="198" />
+      <edge source="43" target="53" id="199" />
+      <edge source="44" target="53" id="200" />
+      <edge source="46" target="49" id="201" />
+      <edge source="48" target="52" id="202" />
+      <edge source="48" target="53" id="203" />
+      <edge source="50" target="52" id="204" />
+      <edge source="50" target="61" id="205" />
+      <edge source="51" target="63" id="206" />
+      <edge source="54" target="55" id="207" />
+      <edge source="54" target="59" id="208" />
+      <edge source="54" target="60" id="209" />
+      <edge source="54" target="65" id="210" />
+      <edge source="54" target="69" id="211" />
+      <edge source="54" target="73" id="212" />
+      <edge source="54" target="98" id="213" />
+      <edge source="54" target="103" id="214" />
+      <edge source="54" target="104" id="215" />
+      <edge source="55" target="61" id="216" />
+      <edge source="55" target="82" id="217" />
+      <edge source="55" target="85" id="218" />
+      <edge source="55" target="86" id="219" />
+      <edge source="55" target="92" id="220" />
+      <edge source="56" target="65" id="221" />
+      <edge source="56" target="67" id="222" />
+      <edge source="56" target="76" id="223" />
+      <edge source="56" target="84" id="224" />
+      <edge source="56" target="86" id="225" />
+      <edge source="56" target="98" id="226" />
+      <edge source="56" target="101" id="227" />
+      <edge source="57" target="59" id="228" />
+      <edge source="57" target="64" id="229" />
+      <edge source="57" target="68" id="230" />
+      <edge source="57" target="70" id="231" />
+      <edge source="57" target="77" id="232" />
+      <edge source="57" target="79" id="233" />
+      <edge source="57" target="83" id="234" />
+      <edge source="57" target="88" id="235" />
+      <edge source="58" target="64" id="236" />
+      <edge source="58" target="70" id="237" />
+      <edge source="58" target="73" id="238" />
+      <edge source="58" target="75" id="239" />
+      <edge source="58" target="81" id="240" />
+      <edge source="58" target="83" id="241" />
+      <edge source="58" target="85" id="242" />
+      <edge source="58" target="86" id="243" />
+      <edge source="58" target="88" id="244" />
+      <edge source="58" target="106" id="245" />
+      <edge source="59" target="60" id="246" />
+      <edge source="59" target="61" id="247" />
+      <edge source="59" target="65" id="248" />
+      <edge source="59" target="66" id="249" />
+      <edge source="59" target="73" id="250" />
+      <edge source="59" target="76" id="251" />
+      <edge source="59" target="82" id="252" />
+      <edge source="59" target="88" id="253" />
+      <edge source="59" target="89" id="254" />
+      <edge source="60" target="62" id="255" />
+      <edge source="60" target="71" id="256" />
+      <edge source="60" target="83" id="257" />
+      <edge source="60" target="87" id="258" />
+      <edge source="60" target="89" id="259" />
+      <edge source="60" target="103" id="260" />
+      <edge source="60" target="107" id="261" />
+      <edge source="61" target="63" id="262" />
+      <edge source="61" target="64" id="263" />
+      <edge source="61" target="71" id="264" />
+      <edge source="61" target="84" id="265" />
+      <edge source="61" target="102" id="266" />
+      <edge source="62" target="68" id="267" />
+      <edge source="62" target="76" id="268" />
+      <edge source="62" target="80" id="269" />
+      <edge source="62" target="82" id="270" />
+      <edge source="62" target="96" id="271" />
+      <edge source="62" target="103" id="272" />
+      <edge source="62" target="92" id="273" />
+      <edge source="63" target="65" id="274" />
+      <edge source="63" target="66" id="275" />
+      <edge source="63" target="67" id="276" />
+      <edge source="63" target="76" id="277" />
+      <edge source="63" target="82" id="278" />
+      <edge source="63" target="85" id="279" />
+      <edge source="63" target="88" id="280" />
+      <edge source="63" target="97" id="281" />
+      <edge source="63" target="98" id="282" />
+      <edge source="63" target="92" id="283" />
+      <edge source="64" target="66" id="284" />
+      <edge source="64" target="68" id="285" />
+      <edge source="64" target="74" id="286" />
+      <edge source="64" target="76" id="287" />
+      <edge source="64" target="77" id="288" />
+      <edge source="64" target="84" id="289" />
+      <edge source="64" target="85" id="290" />
+      <edge source="64" target="96" id="291" />
+      <edge source="64" target="103" id="292" />
+      <edge source="64" target="93" id="293" />
+      <edge source="65" target="67" id="294" />
+      <edge source="65" target="76" id="295" />
+      <edge source="65" target="78" id="296" />
+      <edge source="65" target="86" id="297" />
+      <edge source="65" target="105" id="298" />
+      <edge source="65" target="93" id="299" />
+      <edge source="66" target="68" id="300" />
+      <edge source="66" target="80" id="301" />
+      <edge source="66" target="81" id="302" />
+      <edge source="66" target="85" id="303" />
+      <edge source="66" target="89" id="304" />
+      <edge source="66" target="92" id="305" />
+      <edge source="67" target="69" id="306" />
+      <edge source="67" target="83" id="307" />
+      <edge source="67" target="84" id="308" />
+      <edge source="67" target="85" id="309" />
+      <edge source="68" target="69" id="310" />
+      <edge source="68" target="74" id="311" />
+      <edge source="68" target="82" id="312" />
+      <edge source="68" target="83" id="313" />
+      <edge source="68" target="101" id="314" />
+      <edge source="68" target="105" id="315" />
+      <edge source="69" target="72" id="316" />
+      <edge source="69" target="96" id="317" />
+      <edge source="69" target="90" id="318" />
+      <edge source="70" target="78" id="319" />
+      <edge source="70" target="79" id="320" />
+      <edge source="70" target="81" id="321" />
+      <edge source="70" target="85" id="322" />
+      <edge source="70" target="88" id="323" />
+      <edge source="70" target="97" id="324" />
+      <edge source="71" target="72" id="325" />
+      <edge source="71" target="76" id="326" />
+      <edge source="71" target="96" id="327" />
+      <edge source="71" target="95" id="328" />
+      <edge source="72" target="83" id="329" />
+      <edge source="72" target="88" id="330" />
+      <edge source="72" target="105" id="331" />
+      <edge source="72" target="106" id="332" />
+      <edge source="73" target="79" id="333" />
+      <edge source="73" target="85" id="334" />
+      <edge source="73" target="86" id="335" />
+      <edge source="73" target="104" id="336" />
+      <edge source="73" target="106" id="337" />
+      <edge source="74" target="76" id="338" />
+      <edge source="74" target="81" id="339" />
+      <edge source="74" target="85" id="340" />
+      <edge source="74" target="88" id="341" />
+      <edge source="74" target="89" id="342" />
+      <edge source="74" target="97" id="343" />
+      <edge source="75" target="81" id="344" />
+      <edge source="75" target="84" id="345" />
+      <edge source="75" target="88" id="346" />
+      <edge source="75" target="105" id="347" />
+      <edge source="75" target="107" id="348" />
+      <edge source="76" target="78" id="349" />
+      <edge source="76" target="81" id="350" />
+      <edge source="76" target="87" id="351" />
+      <edge source="76" target="89" id="352" />
+      <edge source="76" target="99" id="353" />
+      <edge source="76" target="101" id="354" />
+      <edge source="76" target="93" id="355" />
+      <edge source="77" target="87" id="356" />
+      <edge source="78" target="84" id="357" />
+      <edge source="78" target="87" id="358" />
+      <edge source="78" target="105" id="359" />
+      <edge source="78" target="92" id="360" />
+      <edge source="78" target="95" id="361" />
+      <edge source="79" target="83" id="362" />
+      <edge source="79" target="87" id="363" />
+      <edge source="79" target="89" id="364" />
+      <edge source="79" target="91" id="365" />
+      <edge source="80" target="104" id="366" />
+      <edge source="81" target="84" id="367" />
+      <edge source="82" target="101" id="368" />
+      <edge source="82" target="91" id="369" />
+      <edge source="82" target="93" id="370" />
+      <edge source="82" target="95" id="371" />
+      <edge source="83" target="84" id="372" />
+      <edge source="83" target="89" id="373" />
+      <edge source="83" target="100" id="374" />
+      <edge source="83" target="101" id="375" />
+      <edge source="83" target="107" id="376" />
+      <edge source="83" target="92" id="377" />
+      <edge source="84" target="101" id="378" />
+      <edge source="85" target="87" id="379" />
+      <edge source="85" target="91" id="380" />
+      <edge source="86" target="93" id="381" />
+      <edge source="87" target="89" id="382" />
+      <edge source="88" target="99" id="383" />
+      <edge source="88" target="102" id="384" />
+      <edge source="96" target="102" id="385" />
+      <edge source="96" target="91" id="386" />
+      <edge source="97" target="102" id="387" />
+      <edge source="97" target="106" id="388" />
+      <edge source="97" target="107" id="389" />
+      <edge source="97" target="90" id="390" />
+      <edge source="97" target="91" id="391" />
+      <edge source="98" target="104" id="392" />
+      <edge source="98" target="90" id="393" />
+      <edge source="98" target="92" id="394" />
+      <edge source="99" target="103" id="395" />
+      <edge source="99" target="104" id="396" />
+      <edge source="100" target="106" id="397" />
+      <edge source="100" target="107" id="398" />
+      <edge source="100" target="92" id="399" />
+      <edge source="101" target="105" id="400" />
+      <edge source="101" target="93" id="401" />
+      <edge source="101" target="94" id="402" />
+      <edge source="102" target="105" id="403" />
+      <edge source="102" target="107" id="404" />
+      <edge source="103" target="106" id="405" />
+      <edge source="103" target="92" id="406" />
+      <edge source="103" target="94" id="407" />
+      <edge source="105" target="91" id="408" />
+      <edge source="105" target="93" id="409" />
+      <edge source="106" target="92" id="410" />
+      <edge source="107" target="93" id="411" />
+      <edge source="90" target="91" id="412" />
+      <edge source="90" target="92" id="413" />
+      <edge source="92" target="93" id="414" />
+    </edges>
+  </graph>
+</gexf>

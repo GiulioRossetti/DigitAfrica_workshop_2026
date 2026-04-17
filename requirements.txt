@@ -10,6 +10,7 @@ seaborn>=0.13
 # Network analysis
 networkx>=3.3
 cdlib>=0.3
+ndlib>=5.1
 
 # Machine learning
 scikit-learn>=1.5

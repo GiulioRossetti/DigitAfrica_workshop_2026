@@ -1,0 +1,1396 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="node" attr.name="activity" attr.type="long"/>
+<key id="d5" for="node" attr.name="enclave" attr.type="long"/>
+<key id="d4" for="node" attr.name="opinion" attr.type="double"/>
+<key id="d3" for="node" attr.name="camp" attr.type="string"/>
+<key id="d2" for="node" attr.name="community_label" attr.type="string"/>
+<key id="d1" for="node" attr.name="label" attr.type="string"/>
+<key id="d0" for="node" attr.name="block" attr.type="long"/>
+<graph edgedefault="undirected"><node id="0">
+  <data key="d0">0</data>
+  <data key="d1">user_000</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5225754628221012</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="1">
+  <data key="d0">0</data>
+  <data key="d1">user_001</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6267739534816222</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="2">
+  <data key="d0">0</data>
+  <data key="d1">user_002</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.4709394728823455</data>
+  <data key="d5">0</data>
+  <data key="d6">9</data>
+</node>
+<node id="3">
+  <data key="d0">0</data>
+  <data key="d1">user_003</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5128540649563611</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="4">
+  <data key="d0">0</data>
+  <data key="d1">user_004</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6256140829266276</data>
+  <data key="d5">0</data>
+  <data key="d6">10</data>
+</node>
+<node id="5">
+  <data key="d0">0</data>
+  <data key="d1">user_005</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.47157140998466296</data>
+  <data key="d5">0</data>
+  <data key="d6">3</data>
+</node>
+<node id="6">
+  <data key="d0">0</data>
+  <data key="d1">user_006</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5239792541179015</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="7">
+  <data key="d0">0</data>
+  <data key="d1">user_007</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.627924800412392</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="8">
+  <data key="d0">0</data>
+  <data key="d1">user_008</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5916116613398111</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="9">
+  <data key="d0">0</data>
+  <data key="d1">user_009</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5052555330351612</data>
+  <data key="d5">0</data>
+  <data key="d6">9</data>
+</node>
+<node id="10">
+  <data key="d0">0</data>
+  <data key="d1">user_010</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5843564104598497</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="11">
+  <data key="d0">0</data>
+  <data key="d1">user_011</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5588636936058482</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="12">
+  <data key="d0">0</data>
+  <data key="d1">user_012</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6397522144841334</data>
+  <data key="d5">0</data>
+  <data key="d6">9</data>
+</node>
+<node id="13">
+  <data key="d0">0</data>
+  <data key="d1">user_013</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5805129768310506</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="14">
+  <data key="d0">0</data>
+  <data key="d1">user_014</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5435083443057518</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="15">
+  <data key="d0">0</data>
+  <data key="d1">user_015</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.42767311822836074</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="16">
+  <data key="d0">0</data>
+  <data key="d1">user_016</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6333918347264973</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="17">
+  <data key="d0">0</data>
+  <data key="d1">user_017</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5217837537294825</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="18">
+  <data key="d0">0</data>
+  <data key="d1">user_018</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6231646985779293</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="19">
+  <data key="d0">0</data>
+  <data key="d1">user_019</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.643208837754323</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="20">
+  <data key="d0">0</data>
+  <data key="d1">user_020</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5949366038685238</data>
+  <data key="d5">0</data>
+  <data key="d6">4</data>
+</node>
+<node id="21">
+  <data key="d0">0</data>
+  <data key="d1">user_021</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6239248011301948</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="22">
+  <data key="d0">0</data>
+  <data key="d1">user_022</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5909485132306702</data>
+  <data key="d5">0</data>
+  <data key="d6">12</data>
+</node>
+<node id="23">
+  <data key="d0">0</data>
+  <data key="d1">user_023</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.4117819607203608</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="24">
+  <data key="d0">0</data>
+  <data key="d1">user_024</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.584486858902239</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="25">
+  <data key="d0">0</data>
+  <data key="d1">user_025</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5196182906080961</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="26">
+  <data key="d0">0</data>
+  <data key="d1">user_026</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6258907243263584</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="27">
+  <data key="d0">0</data>
+  <data key="d1">user_027</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5060337231295663</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="28">
+  <data key="d0">0</data>
+  <data key="d1">user_028</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5281752887855901</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="29">
+  <data key="d0">0</data>
+  <data key="d1">user_029</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6267919015502939</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="30">
+  <data key="d0">0</data>
+  <data key="d1">user_030</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6156175453969248</data>
+  <data key="d5">0</data>
+  <data key="d6">9</data>
+</node>
+<node id="31">
+  <data key="d0">0</data>
+  <data key="d1">user_031</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5584836298827301</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="32">
+  <data key="d0">0</data>
+  <data key="d1">user_032</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6554409965942808</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="33">
+  <data key="d0">0</data>
+  <data key="d1">user_033</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5838540464107089</data>
+  <data key="d5">0</data>
+  <data key="d6">3</data>
+</node>
+<node id="34">
+  <data key="d0">0</data>
+  <data key="d1">user_034</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.573974874100806</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="35">
+  <data key="d0">0</data>
+  <data key="d1">user_035</data>
+  <data key="d2">left-mainstream</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.5183419232440717</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="36">
+  <data key="d0">1</data>
+  <data key="d1">user_036</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6916148521962464</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="37">
+  <data key="d0">1</data>
+  <data key="d1">user_037</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.836787093694755</data>
+  <data key="d5">1</data>
+  <data key="d6">15</data>
+</node>
+<node id="38">
+  <data key="d0">1</data>
+  <data key="d1">user_038</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.853360540928161</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="39">
+  <data key="d0">1</data>
+  <data key="d1">user_039</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.9747608659633554</data>
+  <data key="d5">1</data>
+  <data key="d6">15</data>
+</node>
+<node id="40">
+  <data key="d0">1</data>
+  <data key="d1">user_040</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.8971585951754644</data>
+  <data key="d5">1</data>
+  <data key="d6">13</data>
+</node>
+<node id="41">
+  <data key="d0">1</data>
+  <data key="d1">user_041</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.9894904134443014</data>
+  <data key="d5">1</data>
+  <data key="d6">13</data>
+</node>
+<node id="42">
+  <data key="d0">1</data>
+  <data key="d1">user_042</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-1.0</data>
+  <data key="d5">1</data>
+  <data key="d6">11</data>
+</node>
+<node id="43">
+  <data key="d0">1</data>
+  <data key="d1">user_043</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.8937270279207123</data>
+  <data key="d5">1</data>
+  <data key="d6">14</data>
+</node>
+<node id="44">
+  <data key="d0">1</data>
+  <data key="d1">user_044</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.6705112209688524</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="45">
+  <data key="d0">1</data>
+  <data key="d1">user_045</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-1.0</data>
+  <data key="d5">1</data>
+  <data key="d6">13</data>
+</node>
+<node id="46">
+  <data key="d0">1</data>
+  <data key="d1">user_046</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.8115880223161731</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="47">
+  <data key="d0">1</data>
+  <data key="d1">user_047</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.9039254912723841</data>
+  <data key="d5">1</data>
+  <data key="d6">5</data>
+</node>
+<node id="48">
+  <data key="d0">1</data>
+  <data key="d1">user_048</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-1.0</data>
+  <data key="d5">1</data>
+  <data key="d6">9</data>
+</node>
+<node id="49">
+  <data key="d0">1</data>
+  <data key="d1">user_049</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.8888276023783114</data>
+  <data key="d5">1</data>
+  <data key="d6">11</data>
+</node>
+<node id="50">
+  <data key="d0">1</data>
+  <data key="d1">user_050</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.9736489545241781</data>
+  <data key="d5">1</data>
+  <data key="d6">6</data>
+</node>
+<node id="51">
+  <data key="d0">1</data>
+  <data key="d1">user_051</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.9762777170160721</data>
+  <data key="d5">1</data>
+  <data key="d6">13</data>
+</node>
+<node id="52">
+  <data key="d0">1</data>
+  <data key="d1">user_052</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.8486101695358335</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="53">
+  <data key="d0">1</data>
+  <data key="d1">user_053</data>
+  <data key="d2">left-enclave</data>
+  <data key="d3">left</data>
+  <data key="d4">-0.8517482609688202</data>
+  <data key="d5">1</data>
+  <data key="d6">7</data>
+</node>
+<node id="54">
+  <data key="d0">2</data>
+  <data key="d1">user_054</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.6495394032916568</data>
+  <data key="d5">0</data>
+  <data key="d6">11</data>
+</node>
+<node id="55">
+  <data key="d0">2</data>
+  <data key="d1">user_055</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5700771768362748</data>
+  <data key="d5">0</data>
+  <data key="d6">10</data>
+</node>
+<node id="56">
+  <data key="d0">2</data>
+  <data key="d1">user_056</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.6099026712682086</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="57">
+  <data key="d0">2</data>
+  <data key="d1">user_057</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.6341992412918634</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="58">
+  <data key="d0">2</data>
+  <data key="d1">user_058</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.4852467790043689</data>
+  <data key="d5">0</data>
+  <data key="d6">9</data>
+</node>
+<node id="59">
+  <data key="d0">2</data>
+  <data key="d1">user_059</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5589529725714165</data>
+  <data key="d5">0</data>
+  <data key="d6">2</data>
+</node>
+<node id="60">
+  <data key="d0">2</data>
+  <data key="d1">user_060</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5810180703612448</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="61">
+  <data key="d0">2</data>
+  <data key="d1">user_061</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.6763439252859902</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="62">
+  <data key="d0">2</data>
+  <data key="d1">user_062</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.4652990113667538</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="63">
+  <data key="d0">2</data>
+  <data key="d1">user_063</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.6533031394660207</data>
+  <data key="d5">0</data>
+  <data key="d6">7</data>
+</node>
+<node id="64">
+  <data key="d0">2</data>
+  <data key="d1">user_064</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5356733615757946</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="65">
+  <data key="d0">2</data>
+  <data key="d1">user_065</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5766776200727795</data>
+  <data key="d5">0</data>
+  <data key="d6">9</data>
+</node>
+<node id="66">
+  <data key="d0">2</data>
+  <data key="d1">user_066</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5436387656513136</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="67">
+  <data key="d0">2</data>
+  <data key="d1">user_067</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.49123754698017597</data>
+  <data key="d5">0</data>
+  <data key="d6">4</data>
+</node>
+<node id="68">
+  <data key="d0">2</data>
+  <data key="d1">user_068</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5735832230866943</data>
+  <data key="d5">0</data>
+  <data key="d6">14</data>
+</node>
+<node id="69">
+  <data key="d0">2</data>
+  <data key="d1">user_069</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.4746282936323327</data>
+  <data key="d5">0</data>
+  <data key="d6">9</data>
+</node>
+<node id="70">
+  <data key="d0">2</data>
+  <data key="d1">user_070</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5118754054185246</data>
+  <data key="d5">0</data>
+  <data key="d6">11</data>
+</node>
+<node id="71">
+  <data key="d0">2</data>
+  <data key="d1">user_071</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5903289427542584</data>
+  <data key="d5">0</data>
+  <data key="d6">3</data>
+</node>
+<node id="72">
+  <data key="d0">2</data>
+  <data key="d1">user_072</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5711748500429438</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="73">
+  <data key="d0">2</data>
+  <data key="d1">user_073</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5103412820587232</data>
+  <data key="d5">0</data>
+  <data key="d6">2</data>
+</node>
+<node id="74">
+  <data key="d0">2</data>
+  <data key="d1">user_074</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.49423006592842483</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="75">
+  <data key="d0">2</data>
+  <data key="d1">user_075</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.33284977021634593</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="76">
+  <data key="d0">2</data>
+  <data key="d1">user_076</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.602160502822883</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="77">
+  <data key="d0">2</data>
+  <data key="d1">user_077</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.3942395555043504</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="78">
+  <data key="d0">2</data>
+  <data key="d1">user_078</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.6028533250122513</data>
+  <data key="d5">0</data>
+  <data key="d6">4</data>
+</node>
+<node id="79">
+  <data key="d0">2</data>
+  <data key="d1">user_079</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.520858746614206</data>
+  <data key="d5">0</data>
+  <data key="d6">11</data>
+</node>
+<node id="80">
+  <data key="d0">2</data>
+  <data key="d1">user_080</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5745132779746817</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="81">
+  <data key="d0">2</data>
+  <data key="d1">user_081</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5878169738852445</data>
+  <data key="d5">0</data>
+  <data key="d6">12</data>
+</node>
+<node id="82">
+  <data key="d0">2</data>
+  <data key="d1">user_082</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.508704355616563</data>
+  <data key="d5">0</data>
+  <data key="d6">6</data>
+</node>
+<node id="83">
+  <data key="d0">2</data>
+  <data key="d1">user_083</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.47958252994346995</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="84">
+  <data key="d0">2</data>
+  <data key="d1">user_084</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5279445413928369</data>
+  <data key="d5">0</data>
+  <data key="d6">4</data>
+</node>
+<node id="85">
+  <data key="d0">2</data>
+  <data key="d1">user_085</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.4680482604470697</data>
+  <data key="d5">0</data>
+  <data key="d6">4</data>
+</node>
+<node id="86">
+  <data key="d0">2</data>
+  <data key="d1">user_086</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.6131497283280611</data>
+  <data key="d5">0</data>
+  <data key="d6">2</data>
+</node>
+<node id="87">
+  <data key="d0">2</data>
+  <data key="d1">user_087</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.5310378987073159</data>
+  <data key="d5">0</data>
+  <data key="d6">8</data>
+</node>
+<node id="88">
+  <data key="d0">2</data>
+  <data key="d1">user_088</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.41530251790870065</data>
+  <data key="d5">0</data>
+  <data key="d6">5</data>
+</node>
+<node id="89">
+  <data key="d0">2</data>
+  <data key="d1">user_089</data>
+  <data key="d2">right-mainstream</data>
+  <data key="d3">right</data>
+  <data key="d4">0.4492417712256527</data>
+  <data key="d5">0</data>
+  <data key="d6">4</data>
+</node>
+<node id="96">
+  <data key="d0">3</data>
+  <data key="d1">user_096</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">1.0</data>
+  <data key="d5">1</data>
+  <data key="d6">10</data>
+</node>
+<node id="97">
+  <data key="d0">3</data>
+  <data key="d1">user_097</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9152138193939912</data>
+  <data key="d5">1</data>
+  <data key="d6">9</data>
+</node>
+<node id="98">
+  <data key="d0">3</data>
+  <data key="d1">user_098</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9141352030928647</data>
+  <data key="d5">1</data>
+  <data key="d6">11</data>
+</node>
+<node id="99">
+  <data key="d0">3</data>
+  <data key="d1">user_099</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9080307550873096</data>
+  <data key="d5">1</data>
+  <data key="d6">10</data>
+</node>
+<node id="100">
+  <data key="d0">3</data>
+  <data key="d1">user_100</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.712433936208174</data>
+  <data key="d5">1</data>
+  <data key="d6">13</data>
+</node>
+<node id="101">
+  <data key="d0">3</data>
+  <data key="d1">user_101</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">1.0</data>
+  <data key="d5">1</data>
+  <data key="d6">10</data>
+</node>
+<node id="102">
+  <data key="d0">3</data>
+  <data key="d1">user_102</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9672098083248272</data>
+  <data key="d5">1</data>
+  <data key="d6">9</data>
+</node>
+<node id="103">
+  <data key="d0">3</data>
+  <data key="d1">user_103</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.939991540174858</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="104">
+  <data key="d0">3</data>
+  <data key="d1">user_104</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.8273613278560299</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="105">
+  <data key="d0">3</data>
+  <data key="d1">user_105</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.8601129413992281</data>
+  <data key="d5">1</data>
+  <data key="d6">11</data>
+</node>
+<node id="106">
+  <data key="d0">3</data>
+  <data key="d1">user_106</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.7266406423650662</data>
+  <data key="d5">1</data>
+  <data key="d6">10</data>
+</node>
+<node id="107">
+  <data key="d0">3</data>
+  <data key="d1">user_107</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9150722534788002</data>
+  <data key="d5">1</data>
+  <data key="d6">10</data>
+</node>
+<node id="90">
+  <data key="d0">3</data>
+  <data key="d1">user_090</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9050329353809164</data>
+  <data key="d5">1</data>
+  <data key="d6">3</data>
+</node>
+<node id="91">
+  <data key="d0">3</data>
+  <data key="d1">user_091</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.7342115205047407</data>
+  <data key="d5">1</data>
+  <data key="d6">8</data>
+</node>
+<node id="92">
+  <data key="d0">3</data>
+  <data key="d1">user_092</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9264667814891306</data>
+  <data key="d5">1</data>
+  <data key="d6">15</data>
+</node>
+<node id="93">
+  <data key="d0">3</data>
+  <data key="d1">user_093</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.9373215655034989</data>
+  <data key="d5">1</data>
+  <data key="d6">4</data>
+</node>
+<node id="94">
+  <data key="d0">3</data>
+  <data key="d1">user_094</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.7648143138123982</data>
+  <data key="d5">1</data>
+  <data key="d6">10</data>
+</node>
+<node id="95">
+  <data key="d0">3</data>
+  <data key="d1">user_095</data>
+  <data key="d2">right-enclave</data>
+  <data key="d3">right</data>
+  <data key="d4">0.7627613094848982</data>
+  <data key="d5">1</data>
+  <data key="d6">2</data>
+</node>
+<edge source="0" target="2"/>
+<edge source="0" target="8"/>
+<edge source="0" target="10"/>
+<edge source="0" target="13"/>
+<edge source="0" target="20"/>
+<edge source="0" target="24"/>
+<edge source="0" target="27"/>
+<edge source="0" target="28"/>
+<edge source="0" target="43"/>
+<edge source="1" target="8"/>
+<edge source="1" target="11"/>
+<edge source="1" target="13"/>
+<edge source="1" target="23"/>
+<edge source="1" target="25"/>
+<edge source="1" target="34"/>
+<edge source="1" target="41"/>
+<edge source="2" target="22"/>
+<edge source="2" target="23"/>
+<edge source="2" target="24"/>
+<edge source="2" target="28"/>
+<edge source="2" target="34"/>
+<edge source="2" target="51"/>
+<edge source="2" target="68"/>
+<edge source="3" target="8"/>
+<edge source="3" target="15"/>
+<edge source="3" target="21"/>
+<edge source="3" target="26"/>
+<edge source="3" target="28"/>
+<edge source="3" target="33"/>
+<edge source="3" target="53"/>
+<edge source="4" target="5"/>
+<edge source="4" target="7"/>
+<edge source="4" target="10"/>
+<edge source="4" target="25"/>
+<edge source="4" target="31"/>
+<edge source="4" target="53"/>
+<edge source="5" target="6"/>
+<edge source="5" target="10"/>
+<edge source="5" target="17"/>
+<edge source="5" target="24"/>
+<edge source="5" target="89"/>
+<edge source="6" target="9"/>
+<edge source="6" target="15"/>
+<edge source="6" target="19"/>
+<edge source="6" target="30"/>
+<edge source="6" target="38"/>
+<edge source="7" target="8"/>
+<edge source="7" target="12"/>
+<edge source="7" target="14"/>
+<edge source="7" target="19"/>
+<edge source="8" target="9"/>
+<edge source="8" target="13"/>
+<edge source="8" target="20"/>
+<edge source="8" target="26"/>
+<edge source="8" target="31"/>
+<edge source="8" target="32"/>
+<edge source="8" target="33"/>
+<edge source="9" target="18"/>
+<edge source="9" target="21"/>
+<edge source="9" target="28"/>
+<edge source="9" target="29"/>
+<edge source="9" target="35"/>
+<edge source="9" target="36"/>
+<edge source="9" target="44"/>
+<edge source="10" target="11"/>
+<edge source="10" target="19"/>
+<edge source="10" target="24"/>
+<edge source="10" target="30"/>
+<edge source="10" target="42"/>
+<edge source="10" target="43"/>
+<edge source="10" target="51"/>
+<edge source="11" target="15"/>
+<edge source="11" target="24"/>
+<edge source="11" target="35"/>
+<edge source="11" target="38"/>
+<edge source="12" target="14"/>
+<edge source="12" target="17"/>
+<edge source="12" target="27"/>
+<edge source="12" target="34"/>
+<edge source="12" target="45"/>
+<edge source="12" target="47"/>
+<edge source="13" target="23"/>
+<edge source="13" target="31"/>
+<edge source="13" target="38"/>
+<edge source="13" target="40"/>
+<edge source="13" target="47"/>
+<edge source="14" target="21"/>
+<edge source="14" target="22"/>
+<edge source="14" target="31"/>
+<edge source="14" target="35"/>
+<edge source="14" target="39"/>
+<edge source="14" target="49"/>
+<edge source="14" target="59"/>
+<edge source="15" target="23"/>
+<edge source="15" target="26"/>
+<edge source="15" target="28"/>
+<edge source="15" target="31"/>
+<edge source="15" target="52"/>
+<edge source="15" target="63"/>
+<edge source="15" target="89"/>
+<edge source="17" target="19"/>
+<edge source="17" target="24"/>
+<edge source="17" target="28"/>
+<edge source="17" target="52"/>
+<edge source="17" target="53"/>
+<edge source="17" target="79"/>
+<edge source="17" target="100"/>
+<edge source="18" target="23"/>
+<edge source="18" target="35"/>
+<edge source="18" target="44"/>
+<edge source="18" target="47"/>
+<edge source="19" target="23"/>
+<edge source="19" target="25"/>
+<edge source="19" target="27"/>
+<edge source="19" target="30"/>
+<edge source="19" target="32"/>
+<edge source="19" target="34"/>
+<edge source="19" target="40"/>
+<edge source="19" target="80"/>
+<edge source="20" target="28"/>
+<edge source="20" target="29"/>
+<edge source="20" target="62"/>
+<edge source="20" target="80"/>
+<edge source="21" target="25"/>
+<edge source="21" target="26"/>
+<edge source="21" target="27"/>
+<edge source="21" target="33"/>
+<edge source="21" target="36"/>
+<edge source="21" target="42"/>
+<edge source="21" target="84"/>
+<edge source="22" target="23"/>
+<edge source="22" target="26"/>
+<edge source="22" target="27"/>
+<edge source="22" target="33"/>
+<edge source="22" target="67"/>
+<edge source="22" target="71"/>
+<edge source="22" target="83"/>
+<edge source="23" target="24"/>
+<edge source="23" target="28"/>
+<edge source="23" target="42"/>
+<edge source="23" target="71"/>
+<edge source="24" target="27"/>
+<edge source="24" target="47"/>
+<edge source="24" target="56"/>
+<edge source="24" target="60"/>
+<edge source="25" target="34"/>
+<edge source="25" target="36"/>
+<edge source="25" target="51"/>
+<edge source="25" target="52"/>
+<edge source="25" target="67"/>
+<edge source="26" target="31"/>
+<edge source="26" target="62"/>
+<edge source="26" target="84"/>
+<edge source="26" target="89"/>
+<edge source="27" target="32"/>
+<edge source="27" target="34"/>
+<edge source="27" target="42"/>
+<edge source="27" target="46"/>
+<edge source="27" target="53"/>
+<edge source="27" target="63"/>
+<edge source="28" target="35"/>
+<edge source="28" target="38"/>
+<edge source="29" target="38"/>
+<edge source="29" target="46"/>
+<edge source="30" target="38"/>
+<edge source="30" target="48"/>
+<edge source="30" target="50"/>
+<edge source="30" target="51"/>
+<edge source="30" target="86"/>
+<edge source="31" target="33"/>
+<edge source="31" target="35"/>
+<edge source="31" target="48"/>
+<edge source="32" target="36"/>
+<edge source="32" target="42"/>
+<edge source="32" target="46"/>
+<edge source="32" target="47"/>
+<edge source="33" target="48"/>
+<edge source="33" target="67"/>
+<edge source="34" target="49"/>
+<edge source="35" target="36"/>
+<edge source="35" target="54"/>
+<edge source="35" target="69"/>
+<edge source="36" target="42"/>
+<edge source="36" target="43"/>
+<edge source="36" target="47"/>
+<edge source="37" target="39"/>
+<edge source="37" target="44"/>
+<edge source="37" target="48"/>
+<edge source="39" target="40"/>
+<edge source="39" target="45"/>
+<edge source="39" target="50"/>
+<edge source="39" target="53"/>
+<edge source="40" target="41"/>
+<edge source="40" target="44"/>
+<edge source="40" target="48"/>
+<edge source="41" target="44"/>
+<edge source="42" target="51"/>
+<edge source="43" target="48"/>
+<edge source="43" target="51"/>
+<edge source="43" target="53"/>
+<edge source="44" target="53"/>
+<edge source="46" target="49"/>
+<edge source="48" target="52"/>
+<edge source="48" target="53"/>
+<edge source="50" target="52"/>
+<edge source="50" target="61"/>
+<edge source="51" target="63"/>
+<edge source="54" target="55"/>
+<edge source="54" target="59"/>
+<edge source="54" target="60"/>
+<edge source="54" target="65"/>
+<edge source="54" target="69"/>
+<edge source="54" target="73"/>
+<edge source="54" target="98"/>
+<edge source="54" target="103"/>
+<edge source="54" target="104"/>
+<edge source="55" target="61"/>
+<edge source="55" target="82"/>
+<edge source="55" target="85"/>
+<edge source="55" target="86"/>
+<edge source="55" target="92"/>
+<edge source="56" target="65"/>
+<edge source="56" target="67"/>
+<edge source="56" target="76"/>
+<edge source="56" target="84"/>
+<edge source="56" target="86"/>
+<edge source="56" target="98"/>
+<edge source="56" target="101"/>
+<edge source="57" target="59"/>
+<edge source="57" target="64"/>
+<edge source="57" target="68"/>
+<edge source="57" target="70"/>
+<edge source="57" target="77"/>
+<edge source="57" target="79"/>
+<edge source="57" target="83"/>
+<edge source="57" target="88"/>
+<edge source="58" target="64"/>
+<edge source="58" target="70"/>
+<edge source="58" target="73"/>
+<edge source="58" target="75"/>
+<edge source="58" target="81"/>
+<edge source="58" target="83"/>
+<edge source="58" target="85"/>
+<edge source="58" target="86"/>
+<edge source="58" target="88"/>
+<edge source="58" target="106"/>
+<edge source="59" target="60"/>
+<edge source="59" target="61"/>
+<edge source="59" target="65"/>
+<edge source="59" target="66"/>
+<edge source="59" target="73"/>
+<edge source="59" target="76"/>
+<edge source="59" target="82"/>
+<edge source="59" target="88"/>
+<edge source="59" target="89"/>
+<edge source="60" target="62"/>
+<edge source="60" target="71"/>
+<edge source="60" target="83"/>
+<edge source="60" target="87"/>
+<edge source="60" target="89"/>
+<edge source="60" target="103"/>
+<edge source="60" target="107"/>
+<edge source="61" target="63"/>
+<edge source="61" target="64"/>
+<edge source="61" target="71"/>
+<edge source="61" target="84"/>
+<edge source="61" target="102"/>
+<edge source="62" target="68"/>
+<edge source="62" target="76"/>
+<edge source="62" target="80"/>
+<edge source="62" target="82"/>
+<edge source="62" target="96"/>
+<edge source="62" target="103"/>
+<edge source="62" target="92"/>
+<edge source="63" target="65"/>
+<edge source="63" target="66"/>
+<edge source="63" target="67"/>
+<edge source="63" target="76"/>
+<edge source="63" target="82"/>
+<edge source="63" target="85"/>
+<edge source="63" target="88"/>
+<edge source="63" target="97"/>
+<edge source="63" target="98"/>
+<edge source="63" target="92"/>
+<edge source="64" target="66"/>
+<edge source="64" target="68"/>
+<edge source="64" target="74"/>
+<edge source="64" target="76"/>
+<edge source="64" target="77"/>
+<edge source="64" target="84"/>
+<edge source="64" target="85"/>
+<edge source="64" target="96"/>
+<edge source="64" target="103"/>
+<edge source="64" target="93"/>
+<edge source="65" target="67"/>
+<edge source="65" target="76"/>
+<edge source="65" target="78"/>
+<edge source="65" target="86"/>
+<edge source="65" target="105"/>
+<edge source="65" target="93"/>
+<edge source="66" target="68"/>
+<edge source="66" target="80"/>
+<edge source="66" target="81"/>
+<edge source="66" target="85"/>
+<edge source="66" target="89"/>
+<edge source="66" target="92"/>
+<edge source="67" target="69"/>
+<edge source="67" target="83"/>
+<edge source="67" target="84"/>
+<edge source="67" target="85"/>
+<edge source="68" target="69"/>
+<edge source="68" target="74"/>
+<edge source="68" target="82"/>
+<edge source="68" target="83"/>
+<edge source="68" target="101"/>
+<edge source="68" target="105"/>
+<edge source="69" target="72"/>
+<edge source="69" target="96"/>
+<edge source="69" target="90"/>
+<edge source="70" target="78"/>
+<edge source="70" target="79"/>
+<edge source="70" target="81"/>
+<edge source="70" target="85"/>
+<edge source="70" target="88"/>
+<edge source="70" target="97"/>
+<edge source="71" target="72"/>
+<edge source="71" target="76"/>
+<edge source="71" target="96"/>
+<edge source="71" target="95"/>
+<edge source="72" target="83"/>
+<edge source="72" target="88"/>
+<edge source="72" target="105"/>
+<edge source="72" target="106"/>
+<edge source="73" target="79"/>
+<edge source="73" target="85"/>
+<edge source="73" target="86"/>
+<edge source="73" target="104"/>
+<edge source="73" target="106"/>
+<edge source="74" target="76"/>
+<edge source="74" target="81"/>
+<edge source="74" target="85"/>
+<edge source="74" target="88"/>
+<edge source="74" target="89"/>
+<edge source="74" target="97"/>
+<edge source="75" target="81"/>
+<edge source="75" target="84"/>
+<edge source="75" target="88"/>
+<edge source="75" target="105"/>
+<edge source="75" target="107"/>
+<edge source="76" target="78"/>
+<edge source="76" target="81"/>
+<edge source="76" target="87"/>
+<edge source="76" target="89"/>
+<edge source="76" target="99"/>
+<edge source="76" target="101"/>
+<edge source="76" target="93"/>
+<edge source="77" target="87"/>
+<edge source="78" target="84"/>
+<edge source="78" target="87"/>
+<edge source="78" target="105"/>
+<edge source="78" target="92"/>
+<edge source="78" target="95"/>
+<edge source="79" target="83"/>
+<edge source="79" target="87"/>
+<edge source="79" target="89"/>
+<edge source="79" target="91"/>
+<edge source="80" target="104"/>
+<edge source="81" target="84"/>
+<edge source="82" target="101"/>
+<edge source="82" target="91"/>
+<edge source="82" target="93"/>
+<edge source="82" target="95"/>
+<edge source="83" target="84"/>
+<edge source="83" target="89"/>
+<edge source="83" target="100"/>
+<edge source="83" target="101"/>
+<edge source="83" target="107"/>
+<edge source="83" target="92"/>
+<edge source="84" target="101"/>
+<edge source="85" target="87"/>
+<edge source="85" target="91"/>
+<edge source="86" target="93"/>
+<edge source="87" target="89"/>
+<edge source="88" target="99"/>
+<edge source="88" target="102"/>
+<edge source="96" target="102"/>
+<edge source="96" target="91"/>
+<edge source="97" target="102"/>
+<edge source="97" target="106"/>
+<edge source="97" target="107"/>
+<edge source="97" target="90"/>
+<edge source="97" target="91"/>
+<edge source="98" target="104"/>
+<edge source="98" target="90"/>
+<edge source="98" target="92"/>
+<edge source="99" target="103"/>
+<edge source="99" target="104"/>
+<edge source="100" target="106"/>
+<edge source="100" target="107"/>
+<edge source="100" target="92"/>
+<edge source="101" target="105"/>
+<edge source="101" target="93"/>
+<edge source="101" target="94"/>
+<edge source="102" target="105"/>
+<edge source="102" target="107"/>
+<edge source="103" target="106"/>
+<edge source="103" target="92"/>
+<edge source="103" target="94"/>
+<edge source="105" target="91"/>
+<edge source="105" target="93"/>
+<edge source="106" target="92"/>
+<edge source="107" target="93"/>
+<edge source="90" target="91"/>
+<edge source="90" target="92"/>
+<edge source="92" target="93"/>
+</graph></graphml>
