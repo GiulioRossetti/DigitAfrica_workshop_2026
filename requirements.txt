@@ -1,0 +1,20 @@
+# Core scientific stack
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+
+# Visualisation
+matplotlib>=3.9
+seaborn>=0.13
+
+# Network analysis
+networkx>=3.3
+cdlib>=0.3
+
+# Machine learning
+scikit-learn>=1.5
+
+# Notebook utilities
+jupyter>=1.1
+jupyterlab>=4.2
+tqdm>=4.66
