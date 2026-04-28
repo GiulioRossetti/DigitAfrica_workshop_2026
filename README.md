@@ -54,6 +54,8 @@ Each section also has a short companion exercise notebook in `notebooks/exercise
 
 ## Getting started
 
+### Local use:
+
 ```bash
 git clone https://github.com/GiulioRossetti/DigitAfrica_workshop_2026.git
 cd DigitAfrica_workshop_2026
@@ -66,6 +68,16 @@ python scripts/build_workshop_materials.py
 jupyter lab
 ```
 
+### SoBigData RI:
+
+- Download the repository content locally
+- Open the the RI portal at: https://sobigdata.eu/
+- Register to the E-Infrastructure
+- Enter the SoBigData Lab (second icon on the left in the page header)
+- Upload the repository in the SoBigData Jupyter Lab
+
+## Hands-on
+
 Open the notebooks in this order:
 
 1. `notebooks/00_environment_check.ipynb`
@@ -76,9 +88,7 @@ Open the notebooks in this order:
 
 ## Notes on the YSocial section
 
-- Module 4 assumes access to a YSocial simulation database.
-- The repository ships `data/raw/ysocial_demo.sqlite` so the `ysights` workflow can be executed and tested immediately.
-- When you have a real simulation export, change the `DB_PATH` variable in the notebook and rerun the analysis.
+Module 4 assumes access to a YSocial simulation database: you can either use [Ysocial](https://y-not.social) to generate your own simulation data or download the sample simulation available [here](https://data.d4science.net/mQAFv) (data provided in a zip archive to be extracted)
 
 ## Requirements
 
